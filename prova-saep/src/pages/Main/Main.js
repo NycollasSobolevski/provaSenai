@@ -25,7 +25,7 @@ export default function Main() {
         <div className="main-container">
             <div className='header'>
                 <h2 className='prof-name'>Nome do Professor</h2>
-                <a className='exit-btn'>Sair</a>
+                <a className='exit-btn' href="/">Sair</a>
             </div>
             <div className='btn-container'>
                 <button className='btn'>Cadastrar turma</button>

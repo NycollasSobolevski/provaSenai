@@ -11,7 +11,7 @@ export default function TurmaPage(params) {
         <>
             <div className='header'>
                 <h2 className='prof-name'>Nome do Professor</h2>
-                <a className='exit-btn'>Sair</a>
+                <a className='exit-btn' href="/">Sair</a>
             </div>
         </>
     )
