@@ -28,7 +28,10 @@ export default function Main() {
                 <a className='exit-btn' href="/">Sair</a>
             </div>
             <div className='btn-container'>
-                <button className='btn'>Cadastrar turma</button>
+                <a href='/cadastrarTurma'>
+                    <button className='btn'>Cadastrar turma</button>
+                </a>
+                
             </div>
             <div className='table-container'>
                 <h3>Turmas</h3>

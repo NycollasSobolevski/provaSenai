@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login/Login';
 import Main from './pages/Main/Main';
 import TurmaPage from './pages/Turmas/turmas';
+import CadastrarTurma from './pages/Cadastro/cadastrarTurma';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route exact path='' element={<Login />} />
           <Route path='main' element={<Main />} />
           <Route path='turma' element={<TurmaPage />} />
+          <Route path='cadastrarTurma' element={<CadastrarTurma />} />
         </Routes>
       </BrowserRouter>
     </div>

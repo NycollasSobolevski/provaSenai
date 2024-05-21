@@ -24,7 +24,9 @@ export default function Login() {
                     <input type='text' placeholder='E-Mail' onChange={(e) => setEmail(e.target.value)} />
                     <input type='password' placeholder='Senha' onChange={(e) => setPassword(e.target.value) }/>
                 </div>
-                <button className='btn' onClick={() => login()}>Entrar</button>
+                <a href='/main'>
+                    <button className='btn' onClick={() => login()}>Entrar</button>
+                </a>
             </div>
         </div>
     )
