@@ -1,0 +1,16 @@
+{
+    "classes": [
+        {
+            "id": 1,
+            "name":"Desenvolvimento de sistemas SA01"
+        },
+        {
+            "id": 2,
+            "name":"Redes"
+        },
+        {
+            "id": 3,
+            "name":"Dev de sistemas B402"
+        }
+    ]
+}
