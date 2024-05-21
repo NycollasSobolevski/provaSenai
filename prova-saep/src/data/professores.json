@@ -1,0 +1,22 @@
+{
+    "professores" : [
+        {
+            "id_professor" :"1",
+            "nome" :"Jonas",
+            "email" :"jonas@gmail.com",
+            "senha" :"123123"
+        },
+        {
+            "id_professor" :"2",
+            "nome" :"Irineu",
+            "email" :"irineu@gmail.com",
+            "senha" :"123123"
+        },
+        {
+            "id_professor" :"3",
+            "nome" :"Moises",
+            "email" :"moises@gmail.com",
+            "senha" :"123123"
+        }
+    ]
+}

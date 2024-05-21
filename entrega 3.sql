@@ -4,7 +4,7 @@ USE saep_db;
 
 -- Criação da tabela Professor
 CREATE TABLE Professor (
-    id_professor INT IDENTITY(1,1) PRIMARY KEY,
+    id_professor INT identity(1,1) PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
     senha VARCHAR(100) NOT NULL
@@ -12,7 +12,7 @@ CREATE TABLE Professor (
 
 -- Criação da tabela Turma
 CREATE TABLE Turma (
-    id_turma INT IDENTITY(1,1) PRIMARY KEY,
+    id_turma INT identity(1,1) PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     id_professor INT,
     FOREIGN KEY (id_professor) REFERENCES Professor(id_professor)
@@ -20,7 +20,7 @@ CREATE TABLE Turma (
 
 -- Criação da tabela Atividade
 CREATE TABLE Atividade (
-    id_atividade INT IDENTITY(1,1) PRIMARY KEY,
+    id_atividade INT identity(1,1) PRIMARY KEY,
     descricao TEXT NOT NULL,
     data DATE NOT NULL,
     id_turma INT,
@@ -29,18 +29,20 @@ CREATE TABLE Atividade (
 
 -- População da tabela Professor
 INSERT INTO Professor (nome, email, senha) VALUES 
-('Diego Rocha', 'diego.rocha@example.com', 'senhaSTU'),
-('Marcela Vieira', 'marcela.vieira@example.com', 'senhaVWX'),
-('Renato Nunes', 'renato.nunes@example.com', 'senhaYZA');
+('Carla Mendes', 'carla.mendes@example.com', 'senhaJKL'),
+('André Silva', 'andre.silva@example.com', 'senhaMNO'),
+('Rita Ferreira', 'rita.ferreira@example.com', 'senhaPQR');
 
 -- População da tabela Turma
 INSERT INTO Turma (nome, id_professor) VALUES 
-('Educação Física 101', 1),
-('Ciências 202', 2),
-('Literatura 303', 3);
+('Inglês 101', 1),
+('Matemática 202', 2),
+('Filosofia 303', 3);
 
 -- População da tabela Atividade
 INSERT INTO Atividade (descricao, data, id_turma) VALUES 
-('Aula de Voleibol', '2024-06-08', 1),
-('Experimento sobre Fisiologia', '2024-06-11', 2),
-('Análise de Poemas', '2024-06-19', 3);
+('Ensaios de Inglês', '2024-06-09', 1),
+('Problemas de Cálculo', '2024-06-14', 2),
+('Debate sobre Ética', '2024-06-18', 3);
+
+

@@ -36,8 +36,10 @@ table{
 th, td{
     text-align: center;
 }
+
+
 hr {
-    width: 300%;
+    width:550%;
     margin: 3px 0;
 }
 .table-btn {
